@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 
 //TODO: Change the namespace here to match your project's name
-namespace IdentityTemplate.Models
+namespace Musicology.Models
 {
     public class AppRole: IdentityRole
     {

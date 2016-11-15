@@ -6,7 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Owin;
 
 //TODO: Change the using statement here to match your project's name
-using IdentityTemplate.Models;
+using Musicology.Models;
 
 namespace IdentityTemplate
 {
