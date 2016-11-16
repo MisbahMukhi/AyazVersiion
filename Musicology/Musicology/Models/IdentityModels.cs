@@ -36,6 +36,7 @@ namespace Musicology.Models
         //TODO: Add your dbSets here.  As an example, I've included one for products
         //Remember - the IdentityDbContext already contains a db set for Users.  If you add another one, your code will break
         //public DbSet<Product> Products { get; set; }
+        public DbSet <AppRole> AppRole { get; set;}
                 
         public AppDbContext()
             : base("MyDbConnection", throwIfV1Schema: false)
