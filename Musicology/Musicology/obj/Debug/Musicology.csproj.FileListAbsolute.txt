@@ -57,3 +57,5 @@ C:\Users\Misbah\Source\Repos\F16Team20Project\Musicology\Musicology\bin\System.W
 C:\Users\Misbah\Source\Repos\F16Team20Project\Musicology\Musicology\obj\Debug\Musicology.csprojResolveAssemblyReference.cache
 C:\Users\Misbah\Source\Repos\F16Team20Project\Musicology\Musicology\obj\Debug\Musicology.dll
 C:\Users\Misbah\Source\Repos\F16Team20Project\Musicology\Musicology\obj\Debug\Musicology.pdb
+C:\Users\Misbah\Source\Repos\F16Team20Project\Musicology\Musicology\bin\System.Web.Optimization.dll
+C:\Users\Misbah\Source\Repos\F16Team20Project\Musicology\Musicology\bin\System.Web.Optimization.xml

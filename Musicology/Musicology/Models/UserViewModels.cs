@@ -22,6 +22,31 @@ namespace Musicology.Models
 
     public class RegisterViewModel
     {
+        [Required(ErrorMessage = "Please enter your First Name")]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "Please enter your Last Name")]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
+        [Required]
+        [StringLength(70, MinimumLength = 3)]
+        public string Address { get; set; }
+
+       /* [Required]
+        [StringLength(40)]
+        public string City { get; set; }
+
+        [Required]
+        [StringLength(40)]
+        public string State { get; set; }
+
+        [Required]
+        [Display(Name = "Postal Code")]
+        [StringLength(10, MinimumLength = 5)]
+        public string PostalCode { get; set; } */
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

@@ -8,7 +8,7 @@ using Owin;
 //TODO: Change the using statement here to match your project's name
 using Musicology.Models;
 
-namespace IdentityTemplate
+namespace Musicology
 {
     public partial class Startup
     {

@@ -15,6 +15,11 @@ namespace Musicology.Models
         //public String FName { get; set; }
         //public String LName { get; set; }
 
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        //identity automatically takes care of email and password 
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<AppUser> manager)
         {
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
