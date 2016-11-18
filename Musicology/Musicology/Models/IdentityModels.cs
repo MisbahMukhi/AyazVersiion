@@ -1,8 +1,10 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.ComponentModel.DataAnnotations;
 
 //TODO: Change the namespace here to match your project's name
 namespace Musicology.Models
@@ -15,9 +17,27 @@ namespace Musicology.Models
         //public String FName { get; set; }
         //public String LName { get; set; }
 
+        [Required(ErrorMessage = "Please enter your First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "Please enter your Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+
+        [Required]
+        [StringLength(70, MinimumLength = 3)]
         public string Address { get; set; }
+
+
+        //navigatinal properties
+        public virtual CreditCard CreditCards { get; set; }
+        public virtual List<Order> Orders { get; set; } 
+
+
+
+
         //identity automatically takes care of email and password 
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<AppUser> manager)
@@ -47,5 +67,7 @@ namespace Musicology.Models
         {
             return new AppDbContext();
         }
+
+        public System.Data.Entity.DbSet<Musicology.Models.AppUser> AppUsers { get; set; }
     }
 }
